@@ -1,7 +1,8 @@
 SOURCES = \
-	Main.c
+	hello.c
 
-INCLUDES =
+INCLUDES = \
+	-I.
 
 OUTPUT_FILES = $(SOURCES:.c=.out)
 
