@@ -11,7 +11,7 @@ int main(void) {
     printf("Fahrenheit  Celsius  Mode (%d)\n", MODE);
 
 #if MODE == FOR_LOOP
-    for (int fahrenheit = -20; fahrenheit <= 60; fahrenheit += 20) {
+    for (int fahrenheit = -20; fahrenheit <= 300; fahrenheit += 20) {
         //int celsius = (5 * (fahrenheit - 32)) / 9;
         float celsius = (5.f / 9.f) * (fahrenheit - 32);
         //printf("% 10d  % 7d\n", fahrenheit, celsius);
@@ -19,14 +19,14 @@ int main(void) {
     }
     puts("\nCelsius  Fahrenheit");
 
-    for (int celsius = -20; celsius <= 60; celsius += 10) {
+    for (int celsius = -20; celsius <= 300; celsius += 10) {
         float fahrenheit = (9.f / 5.f) * celsius + 32;
         printf("% 7d  % 10.2f\n", celsius, fahrenheit);
     }
 
 #elif MODE == WHILE_LOOP
     int fahrenheit = -20;
-    while (fahrenheit <= 60) {
+    while (fahrenheit <= 300) {
         //int celsius = (5 * (fahrenheit - 32)) / 9;
         float celsius = (5.f / 9.f) * (fahrenheit - 32);
         //printf("% 10d  % 7d\n", fahrenheit, celsius);
