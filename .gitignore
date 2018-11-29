@@ -262,3 +262,4 @@ __pycache__/
 
 # C Output files
 *.out
+*.map
