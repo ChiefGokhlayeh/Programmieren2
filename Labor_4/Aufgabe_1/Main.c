@@ -16,6 +16,7 @@ void ausgabe(unsigned long factorial) {
 }
 
 unsigned long faku(int n) {
+    printf("Address of n: %p\n", &n);
     if (n <= 0) {
         return 1;
     }
