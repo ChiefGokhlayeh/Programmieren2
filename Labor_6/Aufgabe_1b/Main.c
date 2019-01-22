@@ -19,8 +19,8 @@ int main(void) {
         memset(buffer, 0U, sizeof(buffer));
         s = fgets(buffer, sizeof(buffer), file);
         consumed = sscanf(buffer, "%d", &number);
-        sum += number;
         if (consumed > 0) {
+            sum += number;
             count++;
             printf("%d\n", number);
         }
